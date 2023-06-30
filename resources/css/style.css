@@ -1,0 +1,131 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.flex-container {
+    display: flex;
+    align-items: center;
+}
+
+header {
+    position: fixed;
+    background-color: white;
+    width: 100%;
+    top: 0;
+    z-index: 1;
+    height: 64px;
+}
+
+header h1 {
+    margin-left: 24px;
+}
+
+nav {
+    flex-grow: 1;
+    text-align: right;
+    margin-right: 24px;
+}
+
+nav ul li{
+    text-decoration: none;
+    display: inline-block;
+    margin-right: 16px;
+    
+}
+
+.img-container {
+    width: 60%;
+    height: auto;
+    overflow: hidden;
+}
+
+.img-padding {
+    padding: 32px 24px;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.banner {
+    background-color: #d8d8d8;
+    color: #4a4a4a;
+    position: relative;
+    top: 64px;
+}
+
+.banner-content {
+    font-size: 24px;
+    width: 30%;
+}
+
+.banner-content h1,
+.banner-content p,
+.banner-content button {
+    margin: 0 0 20px;
+}
+
+button {
+    padding: 8px 30%;
+    background-color: #4a4a4a;
+    color: white;
+    font-size: 18px;
+}
+
+.information-section {
+    position: relative;
+    top: 64px;
+    width: 100%;
+    align-items: flex-start;
+}
+
+.testimonials {
+    padding: 32px 24px;
+    width: 60%;
+    border-right: 3px solid #f3f5f5;
+}
+
+.featured-events {
+    width: 40%;
+    padding-top: 16px;
+}
+
+.featured-events figure {
+    width: 35%;
+}
+
+.featured-events .text-content {
+    width: 65%;
+    padding-left: 24px;
+}
+
+.featured-events article {
+    padding: 16px;
+    border-bottom: 3px solid #f3f5f5;
+}
+
+.testimonials h2 {
+    padding: 32px 0 24px 0;
+    font-size: 32px;
+    color: #4a4a4a;
+}
+
+#attribution {
+    padding: 32px 0;
+}
+
+.text-content :is(h4, p, a) {
+    margin-bottom: 8px;
+}
+
+a {
+    text-decoration: none;
+}
