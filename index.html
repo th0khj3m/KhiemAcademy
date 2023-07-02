@@ -4,6 +4,7 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link rel="stylesheet" href="resources/css/style.css" type = "text/css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <title>Document</title>
     </head>
     <body>
@@ -77,48 +78,100 @@
 
 
             <section class = "learning-section">
-                <article class = "learning-course">
-                    <figure> <img src="" alt=""></figure>
-                    <h4> Software engineering </h4>
-                    <p>Courses </p>
-                    <p>Web Development, Mobile Development, IOT, APIs</p>
-                </article>
-                <article class = "learning-course">
-                    <figure> <img src="" alt=""></figure>
-                    <h4> Computer art </h4>
-                    <p>Courses </p>
-                    <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
-                </article>
-                <article class = "learning-course">
-                    <figure> <img src="" alt=""></figure>
-                    <h4> Design </h4>
-                    <p>Courses </p>
-                    <p>User Experience Design, User Research, Visual Design</p>
-                </article>
-                <article class = "learning-course">
-                    <figure> <img src="" alt=""></figure>
-                    <h4> Data </h4>
-                    <p>Courses </p>
-                    <p>Data Science, Big Data, SQL, Data Visualization</p>
-                </article>
-                <article class = "learning-course">
-                    <figure> <img src="" alt=""></figure>
-                    <h4> Business </h4>
-                    <p>Courses </p>
-                    <p>Product Development, Business Development, Startup</p>
-                </article>
-                <article class = "learning-course">
-                    <figure> <img src="" alt=""></figure>
-                    <h4> Marketing </h4>
-                    <p>Courses </p>
-                    <p>Analytics, Content Marketing, Mobile Marketing</p>
-                </article>
+                <h2> Start learning</h2>
+                <div class = "flex-container">
+                    <article class = "learning-course">
+                        <figure> <img src="resources/images/course-software.jpg" alt="Software course"></figure>
+                        <div class = "text-content">
+                            <h4> Software engineering </h4>
+                            <p>Courses </p>
+                            <p>Web Development, Mobile Development, IOT, APIs</p>
+                        </div>
+                    </article>
+                    <article class = "learning-course">
+                        <figure> <img src="resources/images/course-computer-art.jpg" alt="Computer Art course"></figure>
+                        <div class = "text-content">
+                            <h4> Computer art </h4>
+                            <p>Courses </p>
+                            <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
+                        </div>
+                    </article>
+                    <article class = "learning-course">
+                        <figure> <img src="resources/images/course-design.jpg" alt="Design course"></figure>
+                        <div class="text-content">
+                            <h4> Design </h4>
+                            <p>Courses </p>
+                            <p>User Experience Design, User Research, Visual Design</p>
+                        </div>
+                    </article>
+                    <article class = "learning-course">
+                        <figure> <img src="resources/images/course-data.jpg" alt="Data course"></figure>
+                        <div class="text-content">
+                            <h4> Data </h4>
+                            <p>Courses </p>
+                            <p>Data Science, Big Data, SQL, Data Visualization</p>
+                        </div>
+                    </article>
+                    <article class = "learning-course">
+                        <figure> <img src="resources/images/course-business.jpg" alt="Business course"></figure>
+                        <div class="text-content">
+                            <h4> Business </h4>
+                            <p>Courses </p>
+                            <p>Product Development, Business Development, Startup</p>
+                        </div>
+                    </article>
+                    <article class = "learning-course">
+                        <figure> <img src="resources/images/course-marketing.jpg" alt="Marketing course"></figure>
+                        <div class="text-content">
+                            <h4> Marketing </h4>
+                            <p>Courses </p>
+                            <p>Analytics, Content Marketing, Mobile Marketing</p>
+                        </div>
+                    </article>
+                </div>           
+            </section>
+
+
+            <section class = "exhibit-section flex-container">
+                <section class = "exhibit-video">
+                    <video src="resources/videos/thesis.mp4" type = "video/mp4" autoplay muted loop>
+                        Your browser does not suport the video tag.
+                    </video>
+                    <article>
+                        <h4> Reimagine urban</h4>
+                        <p>"I dont even know what i'm doing at the current moment?"</p>
+                    </article>
+                </section>
+                <section class = "exhibit-events flex-container">
+                    <article class="flex-container">
+                        <figure>
+                            <img src="resources/images/thesis-fisma.jpg" alt="Orientation picture">
+                        </figure>
+                        <div class="text-content">
+                            <h4> Fisma: Design and Prototype</h4>
+                            <p>Designer showcase of new prototype product</p>
+                        </div>
+                    </article>
+                    <article class="flex-container">
+                        <figure>
+                            <img src="resources/images/thesis-now-and-then.jpg" alt="Orientation picture">
+                        </figure>
+                        <div class="text-content">
+                            <h4> Now and then</h4>
+                            <p>Research study about New York</p>
+                        </div>
+                    </article>
+                </section>
             </section>
         </main>
 
 
-        <footer>
-
+        <footer class = "flex-container">
+            <p><i class = "fa-regular fa-copyright ">2023 Khiem Academy. All rights reserved</i></p>
+            <ul>
+                <li>Terms</li>
+                <li>Privacy</li>
+            </ul>
         </footer>
     </body>
 </html>

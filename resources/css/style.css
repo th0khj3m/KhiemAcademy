@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #4c4c4c;
 }
 
 .flex-container {
@@ -80,7 +81,7 @@ button {
     font-size: 18px;
 }
 
-.information-section {
+.information-section, .exhibit-section {
     position: relative;
     top: 64px;
     width: 100%;
@@ -93,21 +94,32 @@ button {
     border-right: 3px solid #f3f5f5;
 }
 
-.featured-events {
+.exhibit-video {
+    padding: 32px 24px;
+    width: 60%;
+}
+
+.exhibit-video video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.featured-events, .exihibit-events {
     width: 40%;
     padding-top: 16px;
 }
 
-.featured-events figure {
+.featured-events figure, .exhibit-events figure {
     width: 35%;
 }
 
-.featured-events .text-content {
+.featured-events .text-content, .exhibit-events .text-content {
     width: 65%;
     padding-left: 24px;
 }
 
-.featured-events article {
+.featured-events article, .exhibit-events article  {
     padding: 16px;
     border-bottom: 3px solid #f3f5f5;
 }
@@ -126,6 +138,75 @@ button {
     margin-bottom: 8px;
 }
 
+.exhibit-video article :is(h4, p) {
+    margin: 24px 0 8px;
+}
+
 a {
     text-decoration: none;
+}
+
+.learning-section {
+    background-color: #eaebec;
+    position: relative;
+    top: 60px;
+}
+
+.learning-section h2 {
+    font-size: 2rem;
+    padding-top: 32px;
+    text-align: center;
+}
+
+.learning-section .flex-container {
+    flex-wrap: wrap;
+    padding: 16px 56px;
+
+}
+
+.learning-course {
+    background-color: white;
+    flex: 1 1 25%;
+    height: 350px;
+    margin: 16px;
+    text-align: start;
+}
+
+.learning-course .text-content{
+    margin: 16px;
+}
+
+.learning-course .text-content :is(h4, p) {
+    padding-bottom: 8px;
+}
+
+.exhibit-events {
+    flex-wrap: wrap;
+    flex: 1 1 30%;
+}
+
+.exhibit-section .exhibit-events {
+    padding-top: 16px;
+}
+
+footer {
+    position: relative;
+    top: 65px;
+    font-size: 0.8rem;
+    border-top: 1px solid #d8d8d8;
+}
+
+footer p, footer ul{
+    padding: 16px 0 50px 24px;
+    
+}
+
+footer ul {
+    flex-grow: 1;
+    text-align: right;
+}
+
+footer ul li {
+    display: inline-block;
+    margin-right: 16px;
 }
