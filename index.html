@@ -1,177 +1,228 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <link rel="stylesheet" href="resources/css/style.css" type = "text/css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-        <title>Document</title>
-    </head>
-    <body>
-        <header class = "flex-container">
-            <h1>KhiemAcademy</h1>
-            <nav>
-                <ul>
-                    <li>On campus</li>
-                    <li>Online</li>
-                    <li>Our companies</li>
-                    <li>Sign in</li>
-                </ul>
-            </nav>
-        </header>
 
-        <main>
-            <section class = "banner flex-container">
-                <figure class = "img-container img-padding">
-                    <img src="resources/images/banner.jpg" alt="People sitting at a table to chat and study">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="resources/css/style.css" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+        integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header class="flex-container">
+        <h1>KhiemAcademy</h1>
+        <nav id="desktop">
+            <ul>
+                <li>On campus</li>
+                <li>Online</li>
+                <li>Our companies</li>
+                <li>Sign in</li>
+            </ul>
+        </nav>
+        <nav id="mobile">
+            <ul>
+                <li>
+                    <img src="resources/images/ic-logo.svg" alt="Our Companies" />
+                </li>
+                <li>
+                    <a href="#"><img src="resources/images/ic-on-campus.svg" alt="On Campus" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="resources/images/ic-online.svg" alt="Online" /></a>
+                </li>
+                <li>
+                    <a href="#"><img src="resources/images/ic-login.svg" alt="Sign In" /></a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="banner flex-container">
+            <figure class="img-container img-padding">
+                <img src="resources/images/banner.jpg" alt="People sitting at a table to chat and study" />
+            </figure>
+            <div class="banner-content">
+                <h1>Learn something new everyday</h1>
+                <p>Lmao just learn on god. Focus on ur task fr ?</p>
+                <button id="button" type="button">Start here</button>
+            </div>
+        </section>
+
+        <section class="information-section flex-container">
+            <article class="testimonials">
+                <figure>
+                    <img src="resources/images/information-section.jpg" alt="Black guy reading a book" />
                 </figure>
-                <div class = "banner-content">
-                    <h1> Learn something new everyday </h1>
-                    <p> Lmao just learn on god. Focus on ur task fr ?</p>
-                    <button type = "button">Start here</button>
-                </div>
-            </section>
-
-
-            <section class = "information-section flex-container">
-                <article class = "testimonials">     
+                <h2>It doesn't hurt to keep practicing</h2>
+                <p>"Simply as that"</p>
+                <p id="attribution">Khiem, The Chosen One at lmao.com</p>
+            </article>
+            <section class="featured-events">
+                <article class="flex-container">
                     <figure>
-                        <img src="resources/images/information-section.jpg" alt="Black guy reading a book">
+                        <img src="resources/images/information-orientation.jpg" alt="Orientation picture" />
                     </figure>
-                    <h2> It doesn't hurt to keep practicing </h2>
-                    <p> "Simply as that" </p>
-                    <p id = "attribution">Khiem, The Chosen One at lmao.com</p>
+                    <div class="text-content">
+                        <h4>Orientation date</h4>
+                        <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
+                        <a href="#">Read more</a>
+                    </div>
                 </article>
-                <section class = "featured-events">
-                    <article class = "flex-container">
-                        <figure>
-                            <img src="resources/images/information-orientation.jpg" alt="Orientation picture">
-                        </figure>
-                        <div class="text-content">
-                            <h4> Orientation date</h4>
-                            <p>Tue 10/11 &amp; Wed 10/12: 8am-3pm</p>
-                            <a href="#">Read more</a>
-                        </div>
-                    </article>
-                    <article class = "flex-container">
-                        <figure>
-                            <img src="resources/images/information-campus.jpg" alt="Orientation picture">
-                        </figure>
-                        <div class="text-content">
-                            <h4> Our campus</h4>
-                            <p>Find which campus is close by you</p>
-                            <a href="#">Read more</a>
-                        </div>
-                    </article>
-                    <article class = "flex-container">
-                        <figure>
-                            <img src="resources/images/information-guest-lecture.jpg" alt="Orientation picture">
-                        </figure>
-                        <div class="text-content">
-                            <h4>Our guest lecture</h4>
-                            <p>Join a keynote with Oliver Sack about music in medical treament</p>
-                            <a href="#">Read more</a>
-                        </div>
-                    </article>
-                </section>
+                <article class="flex-container">
+                    <figure>
+                        <img src="resources/images/information-campus.jpg" alt="Orientation picture" />
+                    </figure>
+                    <div class="text-content">
+                        <h4>Our campus</h4>
+                        <p>Find which campus is close by you</p>
+                        <a href="#">Read more</a>
+                    </div>
+                </article>
+                <article class="flex-container">
+                    <figure>
+                        <img src="resources/images/information-guest-lecture.jpg" alt="Orientation picture" />
+                    </figure>
+                    <div class="text-content">
+                        <h4>Our guest lecture</h4>
+                        <p>
+                            Join a keynote with Oliver Sack about music in medical treament
+                        </p>
+                        <a href="#">Read more</a>
+                    </div>
+                </article>
             </section>
+        </section>
+
+        <section class="learning-section">
+            <h2 id="start">Start learning</h2>
+            <div id="desktop" class="flex-container">
+                <article class="learning-course">
+                    <figure>
+                        <img src="resources/images/course-software.jpg" alt="Software course" />
+                    </figure>
+                    <div class="text-content">
+                        <h4>Software engineering</h4>
+                        <p>Courses</p>
+                        <p>Web Development, Mobile Development, IOT, APIs</p>
+                    </div>
+                </article>
+                <article class="learning-course">
+                    <figure>
+                        <img src="resources/images/course-computer-art.jpg" alt="Computer Art course" />
+                    </figure>
+                    <div class="text-content">
+                        <h4>Computer art</h4>
+                        <p>Courses</p>
+                        <p>
+                            Imaging & Design, Web Design, Motion Graphics & Visual Effects,
+                            Computer Animation
+                        </p>
+                    </div>
+                </article>
+                <article class="learning-course">
+                    <figure>
+                        <img src="resources/images/course-design.jpg" alt="Design course" />
+                    </figure>
+                    <div class="text-content">
+                        <h4>Design</h4>
+                        <p>Courses</p>
+                        <p>User Experience Design, User Research, Visual Design</p>
+                    </div>
+                </article>
+                <article class="learning-course">
+                    <figure>
+                        <img src="resources/images/course-data.jpg" alt="Data course" />
+                    </figure>
+                    <div class="text-content">
+                        <h4>Data</h4>
+                        <p>Courses</p>
+                        <p>Data Science, Big Data, SQL, Data Visualization</p>
+                    </div>
+                </article>
+                <article class="learning-course">
+                    <figure>
+                        <img src="resources/images/course-business.jpg" alt="Business course" />
+                    </figure>
+                    <div class="text-content">
+                        <h4>Business</h4>
+                        <p>Courses</p>
+                        <p>Product Development, Business Development, Startup</p>
+                    </div>
+                </article>
+                <article class="learning-course">
+                    <figure>
+                        <img src="resources/images/course-marketing.jpg" alt="Marketing course" />
+                    </figure>
+                    <div class="text-content">
+                        <h4>Marketing</h4>
+                        <p>Courses</p>
+                        <p>Analytics, Content Marketing, Mobile Marketing</p>
+                    </div>
+                </article>
+            </div>
+
+            <div id="mobile" class="flex-container">
+                <h2>Software engineering</h2>
+                <h2>Computer art</h2>
+                <h2>Design</h2>
+                <h2>Data</h2>
+                <h2>Business</h2>
+                <h2>Marketing</h2>
+            </div>
+        </section>
 
 
-            <section class = "learning-section">
-                <h2> Start learning</h2>
-                <div class = "flex-container">
-                    <article class = "learning-course">
-                        <figure> <img src="resources/images/course-software.jpg" alt="Software course"></figure>
-                        <div class = "text-content">
-                            <h4> Software engineering </h4>
-                            <p>Courses </p>
-                            <p>Web Development, Mobile Development, IOT, APIs</p>
-                        </div>
-                    </article>
-                    <article class = "learning-course">
-                        <figure> <img src="resources/images/course-computer-art.jpg" alt="Computer Art course"></figure>
-                        <div class = "text-content">
-                            <h4> Computer art </h4>
-                            <p>Courses </p>
-                            <p>Imaging & Design, Web Design, Motion Graphics & Visual Effects, Computer Animation</p>
-                        </div>
-                    </article>
-                    <article class = "learning-course">
-                        <figure> <img src="resources/images/course-design.jpg" alt="Design course"></figure>
-                        <div class="text-content">
-                            <h4> Design </h4>
-                            <p>Courses </p>
-                            <p>User Experience Design, User Research, Visual Design</p>
-                        </div>
-                    </article>
-                    <article class = "learning-course">
-                        <figure> <img src="resources/images/course-data.jpg" alt="Data course"></figure>
-                        <div class="text-content">
-                            <h4> Data </h4>
-                            <p>Courses </p>
-                            <p>Data Science, Big Data, SQL, Data Visualization</p>
-                        </div>
-                    </article>
-                    <article class = "learning-course">
-                        <figure> <img src="resources/images/course-business.jpg" alt="Business course"></figure>
-                        <div class="text-content">
-                            <h4> Business </h4>
-                            <p>Courses </p>
-                            <p>Product Development, Business Development, Startup</p>
-                        </div>
-                    </article>
-                    <article class = "learning-course">
-                        <figure> <img src="resources/images/course-marketing.jpg" alt="Marketing course"></figure>
-                        <div class="text-content">
-                            <h4> Marketing </h4>
-                            <p>Courses </p>
-                            <p>Analytics, Content Marketing, Mobile Marketing</p>
-                        </div>
-                    </article>
-                </div>           
-            </section>
+        <section class="exhibit-section">
+            <h2>Thesis Exhibit</h2>
 
-
-            <section class = "exhibit-section flex-container">
-                <section class = "exhibit-video">
-                    <video src="resources/videos/thesis.mp4" type = "video/mp4" autoplay muted loop>
+            <div class="flex-container">
+                <section class="exhibit-video">
+                    <video src="resources/videos/thesis.mp4" type="video/mp4" autoplay muted loop>
                         Your browser does not suport the video tag.
                     </video>
                     <article>
-                        <h4> Reimagine urban</h4>
+                        <h4>Reimagine urban</h4>
                         <p>"I dont even know what i'm doing at the current moment?"</p>
                     </article>
                 </section>
-                <section class = "exhibit-events flex-container">
+                <section class="exhibit-events flex-container">
                     <article class="flex-container">
                         <figure>
-                            <img src="resources/images/thesis-fisma.jpg" alt="Orientation picture">
+                            <img src="resources/images/thesis-fisma.jpg" alt="Orientation picture" />
                         </figure>
                         <div class="text-content">
-                            <h4> Fisma: Design and Prototype</h4>
+                            <h4>Fisma: Design and Prototype</h4>
                             <p>Designer showcase of new prototype product</p>
                         </div>
                     </article>
                     <article class="flex-container">
                         <figure>
-                            <img src="resources/images/thesis-now-and-then.jpg" alt="Orientation picture">
+                            <img src="resources/images/thesis-now-and-then.jpg" alt="Orientation picture" />
                         </figure>
                         <div class="text-content">
-                            <h4> Now and then</h4>
+                            <h4>Now and then</h4>
                             <p>Research study about New York</p>
                         </div>
                     </article>
                 </section>
-            </section>
-        </main>
+            </div>
 
+        </section>
+    </main>
 
-        <footer class = "flex-container">
-            <p><i class = "fa-regular fa-copyright ">2023 Khiem Academy. All rights reserved</i></p>
-            <ul>
-                <li>Terms</li>
-                <li>Privacy</li>
-            </ul>
-        </footer>
-    </body>
+    <footer class="flex-container">
+        <p>
+            <i class="fa-regular fa-copyright">2023 Khiem Academy. All rights reserved</i>
+        </p>
+        <ul>
+            <li>Terms</li>
+            <li>Privacy</li>
+        </ul>
+    </footer>
+</body>
+
 </html>
